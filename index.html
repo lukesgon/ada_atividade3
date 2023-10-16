@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Apoio</title>
+    <link rel="stylesheet" type="text/css" href="index.css">
+</head>
+
+<body>
+    <header>
+        <h1>Ajude a Causa!</h1>
+    </header>
+    <main>
+        <div class="container">
+            <h2>Formulário de Inscrição</h2>
+            <form method="post" action="http://localhost:3000/dados">
+                <div class="container-row">
+                    <div class="container-column container-label">
+                        <label for="name">Nome:</label>
+                    </div>
+                    <div class="container-column container-input">
+                        <input type="text" id="name" name="name">
+                    </div>
+                </div>
+                <div class="container-row">
+                    <div class="container-column container-label">
+                        <label for="idade">Idade:</label>
+                    </div>
+                    <div class="container-column container-input">
+                        <input type="number" id="idade" name="idade">
+                    </div>
+                </div>
+                <div class="container-row">
+                    <div class="container-column container-label">
+                        <label for="email">E-mail:</label>
+                    </div>
+                    <div class="container-column container-input">
+                        <input type="email" id="email" name="email">
+                    </div>
+                </div>
+                <div class="container-row">
+                    <div class="container-column container-label">
+                        <label for="tamanhoCamiseta">Camiseta:</label>
+                    </div>
+                    <div class="container-column container-input">
+                        <select name="tamanhoCamiseta" id="tamanhoCamiseta">
+                            <option value="p">P</option>
+                            <option value="m">M</option>
+                            <option value="g">G</option>
+                            <option value="gg">GG</option>
+                            <option value="xgg">XGG</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="container-row">
+                    <div class="container-column container-label">
+                        <span>Categoria:</span>
+                    </div>
+                    <div class="container-input">
+                        <input type="radio" id="3RUN" name="categoria" value="3RUN">
+                        <label for="3RUN">3Km</label>
+                        <input type="radio" id="5RUN" name="categoria" value="5RUN">
+                        <label for="5RUN">5Km</label>
+                        <input type="radio" id="4WALK" name="categoria" value="4WALK">
+                        <label for="4WALK">4Km (Caminhada)</label>
+                    </div>
+                </div>
+                <div class="container-row">
+                    <div class="container-column container-label">
+                        <label for="valorDoacao">Doação:</label>
+                    </div>
+                    <div class="container-column container-input">
+                        <span>R$ <input type="number" id="valorDoacao" name="valorDoacao"></span>
+                    </div>
+                </div>
+                <div class="container-row container-submit">
+                    <input type="submit" name="submit" id="submit">
+                </div>
+            </form>
+        </div>
+    </main>
+</body>
+</html>
